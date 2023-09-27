@@ -199,10 +199,29 @@
 
       /* BLOB STUFF */
 
+  section {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: rgb(0, 0, 0);
+      padding-right: 150px;
 
+  }
 
-      /* END BLOB STUFF */
+  .blob {
+      position: absolute;
+      width: 600px;
+      height: 800px;
 
+  }
+
+  .blob:nth-child(2) {
+      filter: blur(50px);
+  }
+
+  /* END BLOB STUFF */
 
 
       body {
