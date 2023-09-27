@@ -200,6 +200,7 @@
       /* BLOB STUFF */
 
   section {
+      top: 20%;
       position: relative;
       display: flex;
       justify-content: center;
@@ -212,13 +213,13 @@
 
   .blob {
       position: absolute;
-      width: 600px;
-      height: 600px;
+      width: 400px;
+      height: 400px;
 
   }
 
   .blob:nth-child(2) {
-      filter: blur(50px);
+      filter: blur(30px);
   }
 
   /* END BLOB STUFF */
