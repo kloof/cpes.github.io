@@ -161,7 +161,7 @@ section{
 
 
   /*MOBILE USERS VIEW*/
-  @media only screen and (max-width: 300px) 
+  @media only screen and (max-width: 200px) 
   {
 
     img{
