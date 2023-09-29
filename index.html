@@ -1,119 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CPES</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPES | Home</title>
+    <link rel="stylesheet" href="styles\home.css">
 </head>
+<body >
+    <img class="back-img" src="styles/images/CPES logo.png" id="cpes-blue" style="display: none;">
+    <img class="back-img" src="styles/images/Cpes_white.png" id="cpes-white">
 
-<body>
+    <nav>
+        <div class="section left-nav">
+            <div class="start-btn" id="toggle-msg">
+                <img src="styles/images/w-icon.png" id="start-img">
+                <h6 id="start-txt">Start</h6>
+            </div>
+            <div class="start-icons">
+                <a class="notepad-msg" id="notepad-toggle" >
+                    <img src="styles/images/notepad-5.png" id="note-icon">
+                    
+                </a>
+                <a href="https://www.bing.com/">
+                    <img src="styles/images/e-icon.png" id="e-icon">
+                </a>
+            </div>
 
-  <div id="blob-img"></div>
+        </div>
 
+        <div class="section  middle-nav">
+            <!-- Add middle navigation items here -->
+        </div>
 
-  <img src="Cpes_white.png">
+        <div class="section right-nav">
+            <img src="styles/images/microphone_2-0.png" class="icon" id="mic">
+            <img src="styles/images/loudspeaker_rays-0.png" class="icon">
+            <div class="time" id="clock"></div>
+            <script src="scripts/time.js"></script>
+        </div>
+    </nav>
 
+    
 
-  <div class="item2">
+    <!--HOME SECTION-->
+       
 
-    <a href=" https://forms.gle/9kkypaS2i8PvA9Z28" class="body_btn" id="a2">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Join Us!
-    </a>
+        <div class="column">
+            <div class="row">
+                <a href=" https://www.instagram.com/CpESQ8/">
+                    <img src="styles/images/insta.png" class="home-icon" id="insta-icon">
+                     <header>Instagram</header>
+                </a>
+            </div>
+            <div class="row">
+                <a href="https://twitter.com/cpesq8">
+                    <img src="styles/images/twitter2-3766621166.png" class="home-icon" id="twitter-icon">
+                    <header>  Twitter</header>
+                </a>
+            </div>
+            <div class="row">
+                <a href="https://drive.google.com/file/d/1ZBPjKjxFd6_rzV62lnolFxL79Plzkw52/view?usp=sharing">
+                    <img src="styles/images/html-2.png" class="home-icon"id="major-icon">
+                    <header>Download Majorsheet</header>
+                </a>
+            </div>
 
+            <div class="row">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-sItlWWxubbnI7TLQTQ8W6LwokkHUHyQadaxlJ__6Na-GGg/viewform" >
+                    <img src="styles/images/users_key-4.png" class="home-icon"  id="join-icon">
+                    <header>JOIN CPES!</header>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#" >
+                    <img src="styles/images/chess.png" class="home-icon" id="chess-icon">
+                    <header>Chess competition</header>
+                </a>
+            </div>
+        </div>
 
-    <a href="https://twitter.com/cpesq8" class="body_btn" id="a1">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Twitter
-    </a>
-    <a href="https://www.instagram.com/cpesq8/" class="body_btn" id="a3">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Instagram
-    </a>
-
-  </div>
-
-  <section>
-
-    <div class="blob">
-      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="100%" id="blobSvg">
-        <defs>
-          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color: rgb(0, 0, 0);"></stop>
-            <stop offset="100%" style="stop-color: rgb(118, 202, 241);"></stop>
-
-          </linearGradient>
-        </defs>
-        <path fill="url(#gradient)">
-          <animate attributeName="d" dur="80s" repeatCount="indefinite" values="M422.5,286Q472,322,413.5,324Q355,326,341,341Q327,356,322.5,
-              408Q318,460,284,395.5Q250,331,238,327Q226,323,198,341.5Q170,
-              360,171,333.5Q172,307,155,296.5Q138,286,131,268Q124,250,138.5,
-              234Q153,218,165,207.5Q177,197,178,174.5Q179,152,192,132Q205,112,227.5,
-              140Q250,168,268.5,152.5Q287,137,339,97Q391,57,388,104.5Q385,152,424,
-              166.5Q463,181,418,215.5Q373,250,422.5,286Z;
-              M461.5,283Q452,316,451.5,356Q451,396,394,383Q337,370,325.5,408.5Q314,447,282,396Q250,345,230,359.5Q210,374,161.5,406Q113,438,91,409.5Q69,381,98,335.5Q127,290,110,270Q93,250,82,221Q71,192,112.5,186Q154,180,149.5,143Q145,106,174,106.5Q203,107,226.5,70Q250,33,263.5,100Q277,167,328.5,119Q380,71,352,133.5Q324,196,357.5,200Q391,204,431,227Q471,250,461.5,283Z;
-              M462,284.5Q462,319,434.5,341.5Q407,364,366,359Q325,354,310.5,373Q296,392,273,442Q250,492,214.5,480Q179,468,162,431.5Q145,395,104,390.5Q63,386,105.5,334.5Q148,283,113.5,266.5Q79,250,83,223.5Q87,197,68,150.5Q49,104,106,117.5Q163,131,178,103Q193,75,221.5,54.5Q250,34,264.5,98Q279,162,290,171Q301,180,320.5,182Q340,184,384.5,188Q429,192,445.5,221Q462,250,462,284.5Z;
-              M381,279.5Q432,309,377,305.5Q322,302,359,376Q396,450,356,451Q316,452,283,415.5Q250,379,221,403.5Q192,428,191,380.5Q190,333,153.5,340Q117,347,79.5,332Q42,317,98.5,283.5Q155,250,158.5,235.5Q162,221,167.5,207.5Q173,194,139,122.5Q105,51,141.5,39Q178,27,214,28Q250,29,279,50Q308,71,345.5,69Q383,67,416.5,86Q450,105,441,148Q432,191,381,220.5Q330,250,381,279.5Z;
-              M422.5,286Q472,322,413.5,324Q355,326,341,341Q327,356,322.5,
-              408Q318,460,284,395.5Q250,331,238,327Q226,323,198,341.5Q170,
-              360,171,333.5Q172,307,155,296.5Q138,286,131,268Q124,250,138.5,
-              234Q153,218,165,207.5Q177,197,178,174.5Q179,152,192,132Q205,112,227.5,
-              140Q250,168,268.5,152.5Q287,137,339,97Q391,57,388,104.5Q385,152,424,
-              166.5Q463,181,418,215.5Q373,250,422.5,286Z;">
-          </animate>
-        </path>
-      </svg>
-    </div>
-
-    <!--Glow Effects-->
-    <div class="blob">
-      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="100%" id="blobSvg">
-        <defs>
-          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color: rgb(0, 0, 0);"></stop>
-            <stop offset="100%" style="stop-color: rgb(118, 202, 241);"></stop>
-
-          </linearGradient>
-        </defs>
-        <path fill="url(#gradient)">
-          <animate attributeName="d" dur="80s" repeatCount="indefinite" values="M422.5,286Q472,322,413.5,324Q355,326,341,341Q327,356,322.5,
-              408Q318,460,284,395.5Q250,331,238,327Q226,323,198,341.5Q170,
-              360,171,333.5Q172,307,155,296.5Q138,286,131,268Q124,250,138.5,
-              234Q153,218,165,207.5Q177,197,178,174.5Q179,152,192,132Q205,112,227.5,
-              140Q250,168,268.5,152.5Q287,137,339,97Q391,57,388,104.5Q385,152,424,
-              166.5Q463,181,418,215.5Q373,250,422.5,286Z;
-              M461.5,283Q452,316,451.5,356Q451,396,394,383Q337,370,325.5,408.5Q314,447,282,396Q250,345,230,359.5Q210,374,161.5,406Q113,438,91,409.5Q69,381,98,335.5Q127,290,110,270Q93,250,82,221Q71,192,112.5,186Q154,180,149.5,143Q145,106,174,106.5Q203,107,226.5,70Q250,33,263.5,100Q277,167,328.5,119Q380,71,352,133.5Q324,196,357.5,200Q391,204,431,227Q471,250,461.5,283Z;
-              M462,284.5Q462,319,434.5,341.5Q407,364,366,359Q325,354,310.5,373Q296,392,273,442Q250,492,214.5,480Q179,468,162,431.5Q145,395,104,390.5Q63,386,105.5,334.5Q148,283,113.5,266.5Q79,250,83,223.5Q87,197,68,150.5Q49,104,106,117.5Q163,131,178,103Q193,75,221.5,54.5Q250,34,264.5,98Q279,162,290,171Q301,180,320.5,182Q340,184,384.5,188Q429,192,445.5,221Q462,250,462,284.5Z;
-              M381,279.5Q432,309,377,305.5Q322,302,359,376Q396,450,356,451Q316,452,283,415.5Q250,379,221,403.5Q192,428,191,380.5Q190,333,153.5,340Q117,347,79.5,332Q42,317,98.5,283.5Q155,250,158.5,235.5Q162,221,167.5,207.5Q173,194,139,122.5Q105,51,141.5,39Q178,27,214,28Q250,29,279,50Q308,71,345.5,69Q383,67,416.5,86Q450,105,441,148Q432,191,381,220.5Q330,250,381,279.5Z;
-              M422.5,286Q472,322,413.5,324Q355,326,341,341Q327,356,322.5,
-              408Q318,460,284,395.5Q250,331,238,327Q226,323,198,341.5Q170,
-              360,171,333.5Q172,307,155,296.5Q138,286,131,268Q124,250,138.5,
-              234Q153,218,165,207.5Q177,197,178,174.5Q179,152,192,132Q205,112,227.5,
-              140Q250,168,268.5,152.5Q287,137,339,97Q391,57,388,104.5Q385,152,424,
-              166.5Q463,181,418,215.5Q373,250,422.5,286Z;">
-          </animate>
-        </path>
-      </svg>
-
-    </div>
-  </section>
+        <div class="column">
+            <div class="row">
+                <img src="styles/images/directory_closed-4.png" class="home-icon">
+                <header>Java2023</header>
+            </div>
+            <div class="row">
+                <img src="styles/images/recycle_bin_empty_cool-3.png" class="home-icon">
+                <header>Recycle Bin</header>
+            </div>
+            <div class="row">
+                <img src="styles/images/world-2.png" class="home-icon">
+                <header>File Manager</header>
+            </div>
+            <div class="row">
+                <a href="https://www.bing.com/">
+                    <img src="styles/images/msie2-5.png" class="home-icon" >
+                    <header>Internet Explorer</header>
+                </a> 
+            </div>
+            <div class="row">
+                <a id="notepad-toggle2">
+                <img src="styles/images/notepad-5.png" class="home-icon">
+                <header>Notes</header>
+                </a>
+            </div>
+        </div>
 
 
+        <!--NOTE POP_UP-->
+        <div id="notepad-container">
+            <div class="notepad-header">
+                <div class="title-msg">
+                    C:\Users\cpes\notes\colors
+                </div>
+                <div class="exit-x" id="exit-note">
+                    <h6>X</h6>
+                </div>
+            </div>
+            <textarea id="notepad-input" placeholder="Write your favorite color..." maxlength="200"></textarea>
+        </div>
+
+        <!-- POP UP MSGS -->
+        <div class="msg-container" id="draggable-div">
+            <div id="header">
+                <div class="title-msg">
+                    C:\Users\developer\asmaa\questions
+                </div>
+                <div id="header-x">
+                    <h6>X</h6>
+                </div>
+            </div>
+            <div id="body-msg">
+                Do you like Cats?? 😿
+            </div>
+            <div class="msg-btns">
+                <div class="btn" id="btn1">Yes ;></div>
+                <div class="btn" id="btn2">No!</div>
+            </div>
+        </div>
+        <script src="scripts/main.js"></script>
+        
 
 
-</body>
 
+</body> 
 </html>
