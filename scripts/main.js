@@ -6,6 +6,8 @@ const toggleLink = document.getElementById('toggle-msg');
 const bodyMsg = document.getElementById('body-msg');
 const noBTN = document.getElementById('btn2');
 const yesBTN = document.getElementById('btn1');
+const archive_23 = document.getElementById('2023-folder');
+const exit_archive_23 = document.getElementById('exit-2023-archive');
 
 
 // Arrays of values for the body msg 
@@ -33,13 +35,19 @@ function showMessage() {
     updateContent();
 }
 
+
+
 // Add a click event listener to the "X" button
 headerX.addEventListener('click', hideMessage);
 noBTN.addEventListener('click', hideMessage);
 yesBTN.addEventListener('click', hideMessage);
+exit_archive_23.addEventListener('click', hideArchive2023);
+
 
 // Add a click event listener to the toggle link
 toggleLink.addEventListener('click', showMessage);
+toggleLink.addEventListener('click', showMessage);
+archive_23.addEventListener('click', showArchive2023);
 
 //NOTE PAD STUFF
 // Get references to the elements
@@ -47,7 +55,7 @@ const notepadToggle2 = document.getElementById('notepad-toggle2');
 const notepadToggle1 = document.getElementById('notepad-toggle');
 const notepadContainer = document.getElementById('notepad-container');
 const exitX = document.getElementById('exit-note');
-
+const archiveContainer = document.getElementById('archive-container');
 
 // Function to hide the message container
 function hideNote() {
@@ -58,6 +66,15 @@ function hideNote() {
 function showNote() {
     notepadContainer.style.display = 'block';
     updateContent();
+}
+
+function showArchive2023()
+{
+    archiveContainer.style.display = 'block';
+}
+
+function hideArchive2023() {
+    archiveContainer.style.display = 'none';
 }
 
 // Add a click event listener to the "X" button
