@@ -420,6 +420,100 @@ textarea{
     resize: none;
 }
 
+
+
+
+/* Styles for the archive container */
+
+
+
+.archive-column {
+    position: fixed;
+    left: 0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Target every nth child of .column and apply margin-left */
+.column:nth-child(2n) {
+    margin-left: 86px;
+}
+
+
+.archive-row {
+    width: 60px;
+    padding: 12px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 62px;
+}
+
+.archive-row:hover{
+    background-color: rgba(110, 184, 245, 0.486);
+}
+
+#archive-container {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    min-height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    
+}
+
+/* Styles for the ARCHIVE folder input */
+.archive-header{
+    background: rgb(12, 8, 212);
+    display: flex;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    cursor: default;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+.exit-x{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+ 
+  
+  .exit-x h6{
+     background: rgb(241, 240, 240);
+    display: flex;
+    z-index: 999;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    margin: 4px;
+    margin-right: 8px;
+     margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+     align-items: center;
+ }
+
+
+
 #major-icon{
     width:  50px;
 }
@@ -857,23 +951,23 @@ textarea{
 
 
 #major-icon{
-    width:  40px;
+    width:  35px;
 }
 
 #twitter-icon{
-    width: 40px;
+    width: 35px;
 }
 
 #insta-icon{
-    width: 40px;
+    width: 35px;
 }
 
 #join-icon{
-    width: 40px;
+    width: 35px;
 }
 
 #chess-icon{
-    width: 25px;
+    width: 20px;
 }
 
   }
