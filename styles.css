@@ -437,7 +437,7 @@ textarea{
 }
 
 /* Target every nth child of .column and apply margin-left */
-.column:nth-child(2n) {
+.archive-column:nth-child(2n) {
     margin-left: 86px;
 }
 
