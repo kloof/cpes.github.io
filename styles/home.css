@@ -105,7 +105,6 @@ nav {
     width: 46px;
     padding: 5px;
     transform: rotate(-20deg);
-    filter: blur(0.5px); 
 }
 
 #note-icon{
@@ -114,7 +113,7 @@ nav {
     padding: 5px;
     margin-left: 30px;
     cursor: pointer;
-    filter: blur(0.7px); 
+    
 }
 
 #note-icon:hover{
@@ -127,7 +126,6 @@ nav {
     height: 55px;
     margin-left: 30px;
     cursor: pointer;
-    filter: blur(0.5px); 
 }
 
 
@@ -140,7 +138,6 @@ nav {
     display: flex;
     width: 200px;
     border-left: 3px solid white;
-    filter: blur(0.5px); 
 }
 
  /* END OF LEFT NAV */
@@ -162,7 +159,6 @@ nav {
     margin: 5px;
     padding: 10px;
     cursor: pointer;
-    filter: blur(0.7px); 
 }
 
 .icon:hover{
@@ -355,6 +351,7 @@ a{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     overflow: hidden;
+    
 }
 
 /* Styles for the notepad input */
@@ -365,6 +362,7 @@ a{
     outline: none;
     font-size: 16px;
 }
+
 
 .notepad-header{
     background: rgb(12, 8, 212);
@@ -419,14 +417,10 @@ textarea{
 }
 
 
-.temp-icon{
-    width: 2px !important;
-    height: auto;
-    cursor: pointer;
-    filter: blur(0.7px); 
-}
+
 
 /* Styles for the archive container */
+
 
 
 .archive-column {
@@ -605,7 +599,6 @@ nav {
     cursor: pointer;
     align-items: center;
     text-align: center;
-    filter: blur(0.5px); 
 }
 
 .start-btn:hover{
@@ -627,7 +620,6 @@ nav {
     width: 35px;
     padding: 5px;
     transform: rotate(-20deg);
-    filter: blur(0.5px); 
 }
 
 #note-icon{
@@ -636,7 +628,6 @@ nav {
     padding: 5px;
     margin-left: 10px;
     cursor: pointer;
-    filter: blur(0.7px); 
 }
 
 #note-icon:hover{
@@ -649,7 +640,6 @@ nav {
     height: 45px;
     margin-left: 10px;
     cursor: pointer;
-    filter: blur(0.5px); 
 }
 
 
@@ -662,7 +652,6 @@ nav {
     display: flex;
     width: 120px;
     padding-right: 10px;
-    filter: blur(0.5px); 
 }
 
  /* END OF LEFT NAV */
@@ -686,7 +675,6 @@ nav {
     margin: 5px;
     padding: 5px;
     cursor: pointer;
-    filter: blur(0.7px); 
 }
 
 .icon:hover{
@@ -738,7 +726,6 @@ nav {
 .home-icon{
     width: 40px;
     cursor: pointer;
-    filter: blur(0.7px); 
 }
 
 
