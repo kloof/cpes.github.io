@@ -212,6 +212,11 @@ nav {
     filter: blur(0.7px); 
 }
 
+.temp-icon{
+
+    height: 40xp;
+    width: 55px; 
+}
 
 .row:hover{
     background-color: rgba(110, 184, 245, 0.486);
@@ -728,6 +733,11 @@ nav {
     cursor: pointer;
 }
 
+.temp-icon{
+
+    height: 45px;
+    width: 45px; 
+}
 
 .row:hover{
     background-color: rgba(110, 184, 245, 0.486);
