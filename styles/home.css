@@ -214,7 +214,7 @@ nav {
 
 .temp-icon{
 
-    height: 40xp;
+    height: auto;
     width: 55px; 
 }
 
@@ -450,7 +450,6 @@ textarea{
     justify-content: center;
     align-items: center;
     height: 70px;
-    width: 62px;
 }
 
 .archive-row:hover{
