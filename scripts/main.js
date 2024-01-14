@@ -11,7 +11,7 @@ const exit_archive_23 = document.getElementById('exit-2023-archive');
 
 
 // Arrays of values for the body msg 
-const listC = ["Do you like Cats?", "Are you a ROBOT??", "Do you know POKI?"];
+const listC = ["68 65 6C 6C 6F 3F", "Are you a ROBOT??", "CPES is the goat?"];
 
 // Function to generate a random value from an array
 function getRandomValue(arr) {
