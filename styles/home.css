@@ -211,7 +211,10 @@ nav {
     cursor: pointer;
     filter: blur(0.7px); 
 }
-
+.gamejam{
+    width: 60px;
+    cursor: pointer;
+}
 .temp-icon{
 
     height: auto;
@@ -731,6 +734,12 @@ nav {
     width: 40px;
     cursor: pointer;
 }
+
+.gamejam{
+    width: 60px;
+    cursor: pointer;
+}
+
 
 .temp-icon{
 
