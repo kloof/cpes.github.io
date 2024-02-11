@@ -220,6 +220,10 @@ nav {
     height: auto;
     width: 55px; 
 }
+.cyber-icon{
+    height: auto;
+    width: 45px; 
+}
 
 .row:hover{
     background-color: rgba(110, 184, 245, 0.486);
@@ -747,6 +751,10 @@ nav {
     width: 45px; 
 }
 
+.cyber-icon{
+    height: 35px;
+    width: 35px; 
+}
 .row:hover{
     background-color: rgba(110, 184, 245, 0.486);
 }
