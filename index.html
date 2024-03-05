@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPES | Desktop</title>
     <link rel="stylesheet" href="styles\home.css">
 </head>
-<body >
+
+<body>
     <img class="back-img" src="styles/images/CPES logo.png" id="cpes-blue" style="display: none;">
     <img class="back-img" src="styles/images/Cpes_white.png" id="cpes-white">
 
@@ -17,9 +19,9 @@
                 <h6 id="start-txt">Start</h6>
             </div>
             <div class="start-icons">
-                <a class="notepad-msg" id="notepad-toggle" >
+                <a class="notepad-msg" id="notepad-toggle">
                     <img src="styles/images/notepad-5.png" id="note-icon">
-                    
+
                 </a>
                 <a href="https://www.bing.com/">
                     <img src="styles/images/e-icon.png" id="e-icon">
@@ -40,173 +42,175 @@
         </div>
     </nav>
 
-    
+
 
     <!--HOME SECTION-->
-       
 
-        <div class="column">
-            <div class="row">
-                <a href=" https://www.instagram.com/CpESQ8/">
-                    <img src="styles/images/insta.png" class="home-icon" id="insta-icon">
-                     <header>Instagram</header>
-                </a>
-            </div>
-            <div class="row">
-                <a href="https://twitter.com/cpesq8">
-                    <img src="styles/images/twitter2-3766621166.png" class="home-icon" id="twitter-icon">
-                    <header>  Twitter</header>
-                </a>
-            </div>
-            <div class="row">
-                <a href="https://drive.google.com/file/d/1ZBPjKjxFd6_rzV62lnolFxL79Plzkw52/view?usp=sharing">
-                    <img src="styles/images/html-2.png" class="home-icon"id="major-icon">
-                    <header>Download Majorsheet</header>
-                </a>
-            </div>
 
-            <div class="row">
-                <a href="#" >
-                    <img src="styles/images/users_key-4.png" class="home-icon"  id="join-icon">
-                    <header>CLOSED.</header>
-                </a>
-            </div>
-           
-            
+    <div class="column">
+        <div class="row">
+            <a href=" https://www.instagram.com/CpESQ8/">
+                <img src="styles/images/insta.png" class="home-icon" id="insta-icon">
+                <header>Instagram</header>
+            </a>
+        </div>
+        <div class="row">
+            <a href="https://twitter.com/cpesq8">
+                <img src="styles/images/twitter2-3766621166.png" class="home-icon" id="twitter-icon">
+                <header> Twitter</header>
+            </a>
+        </div>
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1ZBPjKjxFd6_rzV62lnolFxL79Plzkw52/view?usp=sharing">
+                <img src="styles/images/html-2.png" class="home-icon" id="major-icon">
+                <header>Download Majorsheet</header>
+            </a>
         </div>
 
-        <div class="column">
-            <div class="row">
-               <a id="2023-folder">
+        <div class="row">
+            <a href="#">
+                <img src="styles/images/users_key-4.png" class="home-icon" id="join-icon">
+                <header>CLOSED.</header>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class="column">
+        <div class="row">
+            <a id="2023-folder">
                 <img src="styles/images/directory_closed-4.png" class="home-icon">
                 <header>23-24-Archive</header>
-               </a>
-            </div>
-            <div class="row">
-                <img src="styles/images/new-bin.png" class="home-icon">
-                <header>Recycle Bin</header>
-            </div>
-            <div class="row">
-                <img src="styles/images/world-2.png" class="home-icon">
-                <header>File Manager</header>
-            </div>
-            <div class="row">
-                <a href="https://www.bing.com/">
-                    <img src="styles/images/msie2-5.png" class="home-icon" >
-                    <header>Internet Explorer</header>
-                </a> 
-            </div>
-            <div class="row">
-                <a id="notepad-toggle2">
+            </a>
+        </div>
+        <div class="row">
+            <img src="styles/images/new-bin.png" class="home-icon">
+            <header>Recycle Bin</header>
+        </div>
+        <div class="row">
+            <a href="Apps\RanDoM.html"><img src="styles/images/random.png" class="random-icon">
+                <header>Random Num App</header>
+            </a>
+        </div>
+        <div class="row">
+            <a href="https://www.bing.com/">
+                <img src="styles/images/msie2-5.png" class="home-icon">
+                <header>Internet Explorer</header>
+            </a>
+        </div>
+        <div class="row">
+            <a id="notepad-toggle2">
                 <img src="styles/images/notepad-5.png" class="home-icon">
                 <header>Notes</header>
+            </a>
+        </div>
+
+    </div>
+
+    <!--NOTE POP_UP-->
+    <div id="notepad-container">
+        <div class="notepad-header">
+            <div class="title-msg">
+                C:\Users\cpes\notes\colors
+            </div>
+            <div class="exit-x" id="exit-note">
+                <h6>X</h6>
+            </div>
+        </div>
+        <textarea id="notepad-input" placeholder="Write your favorite color: " maxlength="200"></textarea>
+    </div>
+
+    <!-- POP UP MSGS -->
+    <div class="msg-container" id="draggable-div">
+        <div id="header">
+            <div class="title-msg">
+                C:\Users\developer\asmaa\questions
+            </div>
+            <div id="header-x">
+                <h6>X</h6>
+            </div>
+        </div>
+        <div id="body-msg">
+            68 65 6C 6C 6F 3F
+        </div>
+        <div class="msg-btns">
+            <div class="btn" id="btn1">Yes ;></div>
+            <div class="btn" id="btn2">No!</div>
+        </div>
+    </div>
+
+
+
+    <!-- ARCHIVE 2023 -->
+    <!--NOTE POP_UP-->
+    <div id="archive-container">
+        <div class="archive-header">
+            <div class="archive-title" style="color: white; padding-left: 5px;">
+                C:\Users\cpes\Desktop\23-24-Archive
+            </div>
+            <div class="exit-x" id="exit-2023-archive">
+                <h6>X</h6>
+            </div>
+        </div>
+        <div class="archive-column">
+            <div class="archive-row">
+                <a href="https://www.instagram.com/p/CynjrJuMLth/" target="_blank">
+                    <img src="styles/images/chess.png" class="home-icon" id="chess-icon">
+                    <header>Chess Tournment</header>
                 </a>
             </div>
-            
-        </div>
-
-        <!--NOTE POP_UP-->
-        <div id="notepad-container">
-            <div class="notepad-header">
-                <div class="title-msg">
-                    C:\Users\cpes\notes\colors
-                </div>
-                <div class="exit-x" id="exit-note">
-                    <h6>X</h6>
-                </div>
+            <div class="row">
+                <a href="https://www.instagram.com/p/C0YgHPwMyGF/" target="_blank">
+                    <img src="styles/images/presenting_workshop.png" class="temp-icon">
+                    <header>Workshop!</header>
+                </a>
             </div>
-            <textarea id="notepad-input" placeholder="Write your favorite color: " maxlength="200"></textarea>
-        </div>
-
-        <!-- POP UP MSGS -->
-        <div class="msg-container" id="draggable-div">
-            <div id="header">
-                <div class="title-msg">
-                    C:\Users\developer\asmaa\questions
-                </div>
-                <div id="header-x">
-                    <h6>X</h6>
-                </div>
-            </div>
-            <div id="body-msg">
-                68 65 6C 6C 6F 3F
-            </div>
-            <div class="msg-btns">
-                <div class="btn" id="btn1">Yes ;></div>
-                <div class="btn" id="btn2">No!</div>
-            </div>
-        </div>
-
-
-
-        <!-- ARCHIVE 2023 -->
-        <!--NOTE POP_UP-->
-        <div id="archive-container">
-            <div class="archive-header">
-                <div class="archive-title" style="color: white; padding-left: 5px;">
-                    C:\Users\cpes\Desktop\23-24-Archive
-                </div>
-                <div class="exit-x" id="exit-2023-archive">
-                    <h6>X</h6>
-                </div>
-            </div>
-            <div class="archive-column">
-                <div class="archive-row">
-                    <a href="https://www.instagram.com/p/CynjrJuMLth/" target="_blank" >
-                        <img src="styles/images/chess.png" class="home-icon" id="chess-icon">
-                        <header>Chess Tournment</header>
-                    </a>
-                </div>
-                <div class="row">
-                    <a href="https://www.instagram.com/p/C0YgHPwMyGF/" target="_blank">
-                        <img src="styles/images/presenting_workshop.png"  class="temp-icon">
-                        <header>Workshop!</header>
-                    </a>
-                </div>
-                <div class="row">
-                    <a href="https://www.instagram.com/p/C3TD7P2sQWI/?img_index=1">
+            <div class="row">
+                <a href="https://www.instagram.com/p/C3TD7P2sQWI/?img_index=1">
                     <img src="styles/images/cyber.png" class="cyber-icon">
                     <header>Capture-the-Flag</header>
-                    </a>
-                </div>
-                
+                </a>
             </div>
-            <div class="archive-column">
-                <div class="archive-row">
-                    <a href="https://www.instagram.com/stories/highlights/18051336244517841/" target="_blank">
-                        <img src="styles/images/time_and_date-4.png" class="home-icon">
-                        <header>Hour-of-Code</header>
-                    </a>
-                </div>
-                <div class="row">
-                    <a href="https://www.instagram.com/p/C0PIzBXs4U8/?img_index=1" target="_blank" >
-                        <img src="styles/images/paint4.png"  class="temp-icon">
-                        <header>Canvas of Dreams!</header>
-                    </a>
-              </div>
 
-              <div class="row">
-                <a href="https://www.instagram.com/stories/highlights/18045678160598357/" target="_blank" >
-                <img src="styles/images/wm-5.png" class="home-icon">
-                <header>Winter Courses</header>
-                </a>
-              </div>
-             <div class="row">
-                <a href="https://www.instagram.com/stories/highlights/17901348257863460/" target="_blank">
-                <img src="styles/images/gamejam-logo.png" class="gamejam">
-                <header>GameJam</header>
-                </a>
-              </div>
-                
-            </div>
-            
-            
-            <script src="scripts/main.js"></script>
-            
         </div>
-        
+        <div class="archive-column">
+            <div class="archive-row">
+                <a href="https://www.instagram.com/stories/highlights/18051336244517841/" target="_blank">
+                    <img src="styles/images/time_and_date-4.png" class="home-icon">
+                    <header>Hour-of-Code</header>
+                </a>
+            </div>
+            <div class="row">
+                <a href="https://www.instagram.com/p/C0PIzBXs4U8/?img_index=1" target="_blank">
+                    <img src="styles/images/paint4.png" class="temp-icon">
+                    <header>Canvas of Dreams!</header>
+                </a>
+            </div>
+
+            <div class="row">
+                <a href="https://www.instagram.com/stories/highlights/18045678160598357/" target="_blank">
+                    <img src="styles/images/wm-5.png" class="home-icon">
+                    <header>Winter Courses</header>
+                </a>
+            </div>
+            <div class="row">
+                <a href="https://www.instagram.com/stories/highlights/17901348257863460/" target="_blank">
+                    <img src="styles/images/gamejam-logo.png" class="gamejam">
+                    <header>GameJam</header>
+                </a>
+            </div>
+
+        </div>
+
+
+        <script src="scripts/main.js"></script>
+
+    </div>
 
 
 
-</body> 
+
+</body>
+
 </html>

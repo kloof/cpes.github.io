@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .text-big {
+            font-size: 400px;
+        }
+
+        .img-size {
+            width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body class="flex justify-center items-center h-screen">
+    <div class="text-center">
+        <img id="logo" class="object-center w-full h-full p-20" src="Cpes_white.png">
+
+
+        <h1 class="text-4xl text-white mb-8">Random Number Generator</h1>
+        <div class="flex justify-center space-x-4">
+            <input id="startInput" type="number" placeholder="Start"
+                class="p-2 md:p-2.5 bg-gray-800 text-white outline-none focus:ring-2 focus:ring-blue-500">
+
+            <input id="finishInput" type="number" placeholder="Finish"
+                class="p-2 md:p-2.5 bg-gray-800 text-white outline-none focus:ring-2 focus:ring-blue-500">
+            <button id="generateBtn"
+                class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Generate</button>
+        </div>
+        <div id="app" class="text-big text-red-500 font-bold mt-8"></div>
+    </div>
+
+    <script>
+        const app = document.getElementById('app');
+        const startInput = document.getElementById('startInput');
+        const finishInput = document.getElementById('finishInput');
+        const generateBtn = document.getElementById('generateBtn');
+        const logoelement = document.getElementById('logo');
+
+
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Function to display 10 random numbers 
+        function displayRandomNumbers(start, finish) {
+
+            // make the numbers bigger and img smaller
+            logoelement.style.width = '200px';
+            logoelement.style.height = 'auto';
+            logoelement.style.padding = '5px';
+            logoelement.style.marginLeft = '150px';
+
+            let count = 0;
+            const interval = setInterval(() => {
+                const randomNumber = getRandomNumber(start, finish);
+                app.textContent = randomNumber;
+                count++;
+                if (count >= 10) {
+                    clearInterval(interval);
+                    app.classList.remove('text-red-500');
+                    app.classList.add('text-blue-400');
+                }
+            }, 1000);
+        }
+
+        // listener for the generate button
+        generateBtn.addEventListener('click', function () {
+            const start = parseInt(startInput.value);
+            const finish = parseInt(finishInput.value);
+
+            if (isNaN(start) || isNaN(finish) || start >= finish) {
+                alert("Invalid input. Please enter valid limits.");
+                return;
+            }
+
+            // Reset color to red
+            app.classList.remove('text-blue-400');
+            app.classList.add('text-red-500');
+
+            // Start generating numbers
+            displayRandomNumbers(start, finish);
+        });
+    </script>
+</body>
+
+</html>
