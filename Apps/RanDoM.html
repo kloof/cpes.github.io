@@ -12,19 +12,26 @@
         }
 
         .text-big {
-            font-size: 400px;
+            font-size: 320px;
+
+        }
+
+        .text-winner {
+            font-size: 150px;
         }
 
         .img-size {
             width: 400px;
             height: auto;
+
         }
     </style>
 </head>
 
 <body class="flex justify-center items-center h-screen">
     <div class="text-center">
-        <img id="logo" class="object-center w-full h-full p-20" src="Cpes_white.png">
+        <img id="logo" class="w-full h-full p-20 mx-auto" src="Cpes_white.png">
+
 
 
         <h1 class="text-4xl text-white mb-8">Random Number Generator</h1>
@@ -34,10 +41,14 @@
 
             <input id="finishInput" type="number" placeholder="Finish"
                 class="p-2 md:p-2.5 bg-gray-800 text-white outline-none focus:ring-2 focus:ring-blue-500">
+
+
             <button id="generateBtn"
                 class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Generate</button>
         </div>
-        <div id="app" class="text-big text-red-500 font-bold mt-8"></div>
+        <h1 id="winner-txt" class="text-winner text-blue-400 mb-8 font-bold  tracking-wider py-2"></h1>
+
+        <div id="app" class="text-big text-red-500 font-bold"></div>
     </div>
 
     <script>
@@ -46,6 +57,7 @@
         const finishInput = document.getElementById('finishInput');
         const generateBtn = document.getElementById('generateBtn');
         const logoelement = document.getElementById('logo');
+        var winnerelement = document.getElementById('winner-txt');
 
 
         function getRandomNumber(min, max) {
@@ -59,7 +71,7 @@
             logoelement.style.width = '200px';
             logoelement.style.height = 'auto';
             logoelement.style.padding = '5px';
-            logoelement.style.marginLeft = '150px';
+            
 
             let count = 0;
             const interval = setInterval(() => {
@@ -70,6 +82,8 @@
                     clearInterval(interval);
                     app.classList.remove('text-red-500');
                     app.classList.add('text-blue-400');
+                    winnerelement.textContent = "WINNER!!";
+                    app.style.marginTop = '-150px';
                 }
             }, 1000);
         }
@@ -85,6 +99,8 @@
             }
 
             // Reset color to red
+            winnerelement.textContent = "";
+            app.style.marginTop = '0px';
             app.classList.remove('text-blue-400');
             app.classList.add('text-red-500');
 
