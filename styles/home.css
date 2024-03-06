@@ -233,6 +233,13 @@ nav {
     width: 55px;
 }
 
+.e-icon {
+
+    height: auto;
+    width: 45px;
+}
+
+
 .random-icon {
 
     height: auto;
@@ -549,7 +556,7 @@ textarea {
 }
 
 #twitter-icon {
-    width: 50px;
+    width: 55px;
 }
 
 #insta-icon {
@@ -765,6 +772,12 @@ textarea {
         width: 62px;
     }
 
+    
+    .e-icon {
+
+        height: auto;
+        width: 35px;
+    }
 
     .home-icon {
         width: 40px;
@@ -784,9 +797,8 @@ textarea {
     }
 
     .random-icon {
-
         height: auto;
-        width: 50px;
+        width: 45px;
     }
 
     .cyber-icon {
@@ -1012,7 +1024,7 @@ textarea {
     }
 
     #twitter-icon {
-        width: 35px;
+        width: 40px;
     }
 
     #insta-icon {
@@ -1020,7 +1032,7 @@ textarea {
     }
 
     #join-icon {
-        width: 35px;
+        width: 40px;
     }
 
     #chess-icon {
