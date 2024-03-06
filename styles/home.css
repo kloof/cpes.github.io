@@ -488,6 +488,11 @@ textarea {
     height: 70px;
 }
 
+.archive-icon{
+    width: 50px;
+    height: auto;
+}
+
 .archive-row:hover {
     background-color: rgba(110, 184, 245, 0.486);
 }
@@ -553,6 +558,8 @@ textarea {
 
 #major-icon {
     width: 50px;
+    height: auto;
+
 }
 
 #twitter-icon {
@@ -561,6 +568,7 @@ textarea {
 
 #insta-icon {
     width: 50px;
+    height: auto;
 }
 
 #join-icon {
@@ -678,7 +686,10 @@ textarea {
     #note-icon:hover {
         background: rgba(255, 255, 255, 0.63);
     }
-
+    .archive-icon{
+        width: 40px;
+        height: auto;
+    }
     #e-icon {
         margin-top: -3px;
         width: 45px;
@@ -798,7 +809,7 @@ textarea {
 
     .random-icon {
         height: auto;
-        width: 45px;
+        width: 40px;
     }
 
     .cyber-icon {
@@ -1020,19 +1031,21 @@ textarea {
 
 
     #major-icon {
-        width: 35px;
+        width: 37px;
+        height: auto;
     }
 
     #twitter-icon {
-        width: 40px;
+        width: 45px;
     }
 
     #insta-icon {
-        width: 35px;
+        width: 40px;
+        height: auto;
     }
 
     #join-icon {
-        width: 40px;
+        width: 42px;
     }
 
     #chess-icon {
@@ -1050,7 +1063,7 @@ textarea {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 300px;
-        height: 450px;
+        height: 480px;
         background-color: white;
         border: 1px solid #ccc;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
