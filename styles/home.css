@@ -206,6 +206,11 @@ nav {
     margin-left: 86px;
 }
 
+/* Target every nth child of .column and apply margin-left */
+.column:nth-child(3n) {
+    margin-left: 174px;
+}
+
 
 .row {
     width: 60px;
@@ -855,11 +860,6 @@ textarea {
         align-items: center;
         justify-content: center;
         text-align: center;
-    }
-
-    /* Target every nth child of .column and apply margin-left */
-    .column:nth-child(2n) {
-        margin-left: 86px;
     }
 
 
