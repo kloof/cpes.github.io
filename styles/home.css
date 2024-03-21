@@ -238,6 +238,12 @@ nav {
     width: 55px;
 }
 
+.cod {
+
+    height: auto;
+    width: 50px;
+}
+
 .merch {
     width: 57px;
     cursor: pointer;
@@ -900,6 +906,12 @@ textarea {
 
         height: 40px;
         width: 40px;
+    }
+
+    .cod {
+
+        height: 40px;
+        width: auto;
     }
 
     .random-icon {
