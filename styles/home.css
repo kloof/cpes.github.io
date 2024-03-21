@@ -238,6 +238,11 @@ nav {
     width: 55px;
 }
 
+.merch {
+    width: 57px;
+    cursor: pointer;
+}
+
 .e-icon {
 
     height: auto;
@@ -1149,6 +1154,11 @@ textarea {
     .sponsor-folder-icons {
         width: 45px;
         height: auto;
+    }
+
+    .merch {
+        width: 52px;
+        cursor: pointer;
     }
 
     /* Styles for the ARCHIVE folder  */
