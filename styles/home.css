@@ -246,7 +246,12 @@ nav {
 
 .merch {
     width: 57px;
-    cursor: pointer;
+    height: auto;
+}
+
+.saraha {
+    width: 49px;
+    height: auto;
 }
 
 .e-icon {
@@ -1171,6 +1176,11 @@ textarea {
     .merch {
         width: 52px;
         cursor: pointer;
+    }
+
+    .saraha {
+        width: 40px;
+        height: auto;
     }
 
     /* Styles for the ARCHIVE folder  */
