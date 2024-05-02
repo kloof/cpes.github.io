@@ -250,8 +250,8 @@ nav {
 }
 
 .game-diplay-icon{
-    width: 50px;
-    height: 55px;
+    width: 45px;
+    height: 49px;
 }
 
 .saraha {
@@ -506,12 +506,18 @@ textarea {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 0px;
 }
 
-/* Target every nth child of .column and apply margin-left */
 .archive-column:nth-child(2n) {
     margin-left: 86px;
 }
+
+.archive-column:nth-child(4n) {
+    margin-left: 176px;
+}
+
+
 
 .sponsors-column:nth-child(2n) {
     margin-left: 86px;
@@ -532,7 +538,7 @@ textarea {
     margin: 10px;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 80px;
 }
 
 .archive-icon {
