@@ -1269,7 +1269,7 @@ textarea {
     }
 
     #chess-icon {
-        width: 20px;
+        width: 28px;
     }
 
     #sponsors-icon {
@@ -1430,6 +1430,15 @@ textarea {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         /* Add a shadow */
         font-size: 12px;
+    }
+
+    .archive-row {
+        width: 60px;
+        padding: 12px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
     }
 
 }
