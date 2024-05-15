@@ -12,8 +12,12 @@ const exit_archive_23 = document.getElementById('exit-2023-archive');
 const exit_sponsors = document.getElementById('exit-sponsors');
 const exit_admins = document.getElementById('exit-admins');
 const exit_admins23 = document.getElementById('exit-admins23');
+const exit_admins22 = document.getElementById('exit-admins22');
+const exit_admins24 = document.getElementById('exit-admins24');
 const admins_folder = document.getElementById('admins-folder');
 const admins23_folder = document.getElementById('admins23-folder');
+const admins22_folder = document.getElementById('admins22-folder');
+const admins24_folder = document.getElementById('admins24-folder');
 
 // Arrays of values for the body msg 
 const listC = ["68 65 6C 6C 6F 3F", "is Talal the 100th president of CPES?", "Do u know Project Code Kw?", "HlElO>>?"];
@@ -80,6 +84,12 @@ exit_admins.addEventListener('click', function() {
 exit_admins23.addEventListener('click', function() {
     hide(admins23Container);
 });
+exit_admins24.addEventListener('click', function() {
+    hide(admins24Container);
+});
+exit_admins22.addEventListener('click', function() {
+    hide(admins22Container);
+});
 
 // Add a click event listener to the toggle link
 toggleLink.addEventListener('click', showMessage);
@@ -95,6 +105,12 @@ admins_folder.addEventListener('click', function() {
 admins23_folder.addEventListener('click', function() {
     show(admins23Container);
 });
+admins24_folder.addEventListener('click', function() {
+    show(admins24Container);
+});
+admins22_folder.addEventListener('click', function() {
+    show(admins22Container);
+});
 
 //NOTE PAD STUFF
 const notepadToggle2 = document.getElementById('notepad-toggle2');
@@ -109,6 +125,8 @@ const sponsorsContainer = document.getElementById('sponsors-container');
 //admins STUFF
 const adminsContainer = document.getElementById('admins-container');
 const admins23Container = document.getElementById('admins23-container');
+const admins22Container = document.getElementById('admins22-container');
+const admins24Container = document.getElementById('admins24-container');
 
 function hide(container){
     container.style.display = 'none';
