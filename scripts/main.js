@@ -10,6 +10,10 @@ const archive_23 = document.getElementById('2023-folder');
 const sponsors24 = document.getElementById('sponsors-folder');
 const exit_archive_23 = document.getElementById('exit-2023-archive');
 const exit_sponsors = document.getElementById('exit-sponsors');
+const exit_admins = document.getElementById('exit-admins');
+const exit_admins23 = document.getElementById('exit-admins23');
+const admins_folder = document.getElementById('admins-folder');
+const admins23_folder = document.getElementById('admins23-folder');
 
 // Arrays of values for the body msg 
 const listC = ["68 65 6C 6C 6F 3F", "is Talal the 100th president of CPES?", "Do u know Project Code Kw?", "HlElO>>?"];
@@ -69,12 +73,28 @@ exit_archive_23.addEventListener('click', hideArchive2023);
 exit_sponsors.addEventListener('click', hideSponsors24);
 
 
+//FOR ADMINS
+exit_admins.addEventListener('click', function() {
+    hide(adminsContainer);
+});
+exit_admins23.addEventListener('click', function() {
+    hide(admins23Container);
+});
+
 // Add a click event listener to the toggle link
 toggleLink.addEventListener('click', showMessage);
 archive_23.addEventListener('click', showArchive2023);
 
 //SPONSORS
 sponsors24.addEventListener('click', showSponsors24);
+
+//FOR ADMINS
+admins_folder.addEventListener('click', function() {
+    show(adminsContainer);
+});
+admins23_folder.addEventListener('click', function() {
+    show(admins23Container);
+});
 
 //NOTE PAD STUFF
 const notepadToggle2 = document.getElementById('notepad-toggle2');
@@ -83,8 +103,20 @@ const notepadContainer = document.getElementById('notepad-container');
 const exitX = document.getElementById('exit-note');
 const archiveContainer = document.getElementById('archive-container');
 
+//sponsors STUFF
 const sponsorsContainer = document.getElementById('sponsors-container');
 
+//admins STUFF
+const adminsContainer = document.getElementById('admins-container');
+const admins23Container = document.getElementById('admins23-container');
+
+function hide(container){
+    container.style.display = 'none';
+}
+
+function show(container) {
+    container.style.display = 'block';
+}
 
 // Function to hide the message container
 function hideNote() {
@@ -113,6 +145,7 @@ function hideArchive2023() {
 function hideSponsors24() {
     sponsorsContainer.style.display = 'none';
 }
+
 
 // Add a click event listener to the "X" button
 exitX.addEventListener('click', hideNote);

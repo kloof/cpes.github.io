@@ -499,6 +499,15 @@ textarea {
     text-align: center;
 }
 
+.admins-column {
+    position: fixed;
+    left: 0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .archive-column {
     position: fixed;
     left: 0;
@@ -520,10 +529,25 @@ textarea {
 
 
 .sponsors-column:nth-child(2n) {
+    
     margin-left: 86px;
 }
 
+.admins-column:nth-child(n) {
+    margin-left: 0px;
+}
+
+
 .sponsors-row {
+    width: 60px;
+    padding: 12px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.admins-row{
     width: 60px;
     padding: 12px;
     margin: 10px;
@@ -550,6 +574,11 @@ textarea {
 .sponsors-row:hover {
     background-color: rgba(110, 184, 245, 0.486);
 }
+
+.admins-row:hover {
+    background-color: rgba(110, 184, 245, 0.486);
+}
+
 
 .archive-row:hover {
     background-color: rgba(110, 184, 245, 0.486);
@@ -588,6 +617,38 @@ textarea {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 
+}
+
+#admins23-container{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    min-height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#admins-container{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    min-height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
 /* Styles for the ARCHIVE folder input */
@@ -697,6 +758,11 @@ textarea {
 .sponsor-folder-icons {
     width: 40px;
     height: auto;
+}
+
+.admins-prag{
+    padding: 10px;
+    font-size: 16px;
 }
 
 
@@ -1161,8 +1227,9 @@ textarea {
         width: 45px;
     }
 
-    #insta-icon {
-        width: 40px;
+
+    .txt-file-icon{
+        width: 43px;
         height: auto;
     }
 
@@ -1249,6 +1316,22 @@ textarea {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         z-index: 1000;
 
+    }
+
+    #admins-container{
+        display: none;
+        position: absolute;
+        min-width: 150px;
+        min-height: 70px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 480px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
     }
 
     .sponsors-header {
