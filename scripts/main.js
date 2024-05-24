@@ -20,7 +20,7 @@ const admins22_folder = document.getElementById('admins22-folder');
 const admins24_folder = document.getElementById('admins24-folder');
 
 // Arrays of values for the body msg 
-const listC = ["68 65 6C 6C 6F 3F", "is Talal the 100th president of CPES?", "Do u know Project Code Kw?", "HlElO>>?"];
+const listC = ["68 65 6C 6C 6F 3F", "Do u know Project Code Kw?", "HlElO>>?", "Ever heard of 91TOR?"];
 
 // Function to generate a random value from an array
 function getRandomValue(arr) {
@@ -49,6 +49,11 @@ function yesBtnClicked() {
 
     if (bodyMsg.textContent === "Do u know Project Code Kw?") {
         document.body.style.backgroundColor = "#8bd8bd";
+        draggableDiv.style.display = 'none';
+    }
+    else if (bodyMsg.textContent === "Ever heard of 91TOR?") {
+
+        window.location.href = 'https://www.youtube.com/watch?v=CL7QGyT_xQ0&ab_channel=NPC3301';
         draggableDiv.style.display = 'none';
     }
     else {
