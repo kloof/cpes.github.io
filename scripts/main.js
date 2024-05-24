@@ -36,7 +36,7 @@ function updateContent() {
 function noBtnClicked() {
     if (bodyMsg.textContent === "Do u know Project Code Kw?") {
 
-        window.location.href = 'https://home.projectcodekw.com/';
+        window.location.href = 'https://projectcodekw.com/';
         draggableDiv.style.display = 'none';
     }
     else {
