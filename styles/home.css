@@ -306,8 +306,19 @@ a {
     left: 40%;
     top: 100px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    /* Add a shadow */
     display: none;
+}
+
+.msg-courses {
+    background: rgb(241, 240, 240);
+    z-index: 999;
+    position: absolute;
+    width: 30%;
+    height: 200px;
+    left: 40%;
+    top: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: block;
 }
 
 #header {
@@ -372,8 +383,21 @@ a {
     width: 100%;
     text-align: center;
 }
+#courses-msg {
+    cursor: default;
+    font-size: 25px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
 
 .msg-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.courses-btns {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1070,6 +1094,18 @@ textarea {
         display: none;
     }
 
+    .msg-courses {
+        background: rgb(241, 240, 240);
+        z-index: 999;
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        left: 50px;
+        top: 150px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        display: block;
+    }
+
     #header {
         background: rgb(12, 8, 212);
         display: flex;
@@ -1134,8 +1170,21 @@ textarea {
         width: 100%;
         text-align: center;
     }
+    #courses-msg {
+        cursor: default;
+        font-size: 15px;
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
 
     .msg-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .courses-btns {
         display: flex;
         justify-content: center;
         align-items: center;

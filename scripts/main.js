@@ -1,11 +1,14 @@
 
 // Get references to the elements
 const draggableDiv = document.getElementById('draggable-div');
+const coursesDiv = document.getElementById('courses-div');
 const headerX = document.getElementById('header-x');
 const toggleLink = document.getElementById('toggle-msg');
 const bodyMsg = document.getElementById('body-msg');
 const noBTN = document.getElementById('btn2');
 const yesBTN = document.getElementById('btn1');
+const c_noBTN = document.getElementById('c-btn2');
+const c_yesBTN = document.getElementById('c-btn1');
 const archive_23 = document.getElementById('2023-folder');
 const sponsors24 = document.getElementById('sponsors-folder');
 const exit_archive_23 = document.getElementById('exit-2023-archive');
@@ -35,13 +38,15 @@ function updateContent() {
 
 function noBtnClicked() {
     if (bodyMsg.textContent === "Do u know Project Code Kw?") {
-
         window.location.href = 'https://projectcodekw.com/';
         draggableDiv.style.display = 'none';
     }
     else {
         draggableDiv.style.display = 'none';
     }
+}
+function c_noBtnClicked() {
+    coursesDiv.style.display = 'none';
 }
 
 function yesBtnClicked() {
@@ -61,6 +66,11 @@ function yesBtnClicked() {
     }
 }
 
+function c_yesBtnClicked() {
+    coursesDiv.style.display = 'none';
+    window.location.href = 'https://forms.gle/Fx3qawygrJTw8FNF9';
+}
+
 // Function to show the message container
 function showMessage() {
 
@@ -76,6 +86,8 @@ function hideMessage() {
 headerX.addEventListener('click', hideMessage);
 noBTN.addEventListener('click', noBtnClicked);
 yesBTN.addEventListener('click', yesBtnClicked);
+c_noBTN.addEventListener('click', c_noBtnClicked);
+c_yesBTN.addEventListener('click', c_yesBtnClicked);
 exit_archive_23.addEventListener('click', hideArchive2023);
 
 //FOR SPONSORS
