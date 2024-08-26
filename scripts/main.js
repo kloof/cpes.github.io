@@ -68,7 +68,7 @@ function yesBtnClicked() {
 
 function c_yesBtnClicked() {
     coursesDiv.style.display = 'none';
-    window.location.href = 'https://forms.gle/Fx3qawygrJTw8FNF9';
+    window.location.href = 'https://forms.gle/PbpR6C3i7GABBrFG6';
 }
 
 // Function to show the message container

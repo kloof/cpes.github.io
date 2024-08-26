@@ -238,6 +238,12 @@ nav {
     width: 55px;
 }
 
+.temp2-icon {
+
+    height: auto;
+    width: 48px;
+}
+
 .cod {
 
     height: auto;
@@ -1043,6 +1049,12 @@ textarea {
 
         height: 40px;
         width: 40px;
+    }
+
+    .temp2-icon {
+
+        height: auto;
+        width: 35px;
     }
 
     .cod {
