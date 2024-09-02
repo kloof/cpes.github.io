@@ -243,6 +243,20 @@ nav {
     height: auto;
     width: 48px;
 }
+.whatpizza{
+
+    height: auto;
+    width: 58px;
+    padding: 5px;
+
+}
+.kse {
+
+    height: auto;
+    width: 40px;
+    padding: 5px;
+
+}
 
 .cod {
 
@@ -819,6 +833,7 @@ textarea {
 .sponsor-folder-icons {
     width: 40px;
     height: auto;
+    padding: 5px;
 }
 
 .admins-prag{
@@ -1055,6 +1070,20 @@ textarea {
 
         height: auto;
         width: 35px;
+    }
+    .whatpizza{
+
+        height: auto;
+        width: 55px;
+        padding: 5px;
+
+    }
+    .kse {
+
+        height: auto;
+        width: 45px;
+        padding: 5px;
+
     }
 
     .cod {
@@ -1336,6 +1365,8 @@ textarea {
     #sponsors-icon {
         width: 45px;
         height: auto;
+        padding: 5px;
+
     }
 
     .sponsor-folder-icons {
