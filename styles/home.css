@@ -243,6 +243,12 @@ nav {
     height: auto;
     width: 48px;
 }
+.summer-courses {
+
+    width: 57px;
+    height: auto;
+    
+}
 .whatpizza{
 
     height: auto;
@@ -1067,6 +1073,11 @@ textarea {
     }
 
     .temp2-icon {
+
+        height: auto;
+        width: 35px;
+    }
+    .summer-courses{
 
         height: auto;
         width: 35px;
